@@ -33,7 +33,7 @@
   <!-- Swiper -->
   <link href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" rel="stylesheet">
   <!-- Main CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
   <style>
     /* Custom styles for PDF viewer */
     #pdf-viewer {
@@ -154,12 +154,12 @@
   <!-- Swiper -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
   <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
+  <script src="js/main.js"></script>
 
   <!-- PDF.js Integration -->
   <script type="module">
-    import * as pdfjsLib from './pdfjs/pdf.mjs';
-    pdfjsLib.GlobalWorkerOptions.workerSrc = './pdfjs/pdf.worker.mjs';
+    import * as pdfjsLib from './pdf/pdf.mjs';
+    pdfjsLib.GlobalWorkerOptions.workerSrc = './pdf/pdf.worker.mjs';
 
     const url = 'pdf/wine-sales-report.pdf'; // Replace with your actual PDF file path
     const container = document.getElementById('pdf-viewer');
